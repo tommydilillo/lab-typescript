@@ -1,7 +1,7 @@
 let tasks = [];
 function addTask(task) {
     tasks.push(task);
-    console.log(`Task "` + task + `" inserted in the list`);
+    console.log(`ADD - Task "${task}" inserted in the list`);
     return tasks.length;
 }
 console.log(`Number of items: ` + addTask);
@@ -11,10 +11,10 @@ function listAllTasks() {
     }
 }
 function deleteTask(task) {
-    let index = tasks.indexOf(task);
+    const index = tasks.indexOf(task);
     console.log(index);
     tasks.splice(index, 1);
-    console.log(`Task "` + task + `" deleted from the list`);
+    console.log(`DELETE -- Task ${task}" deleted from the list`);
     console.log(tasks);
     return tasks.length;
 }
